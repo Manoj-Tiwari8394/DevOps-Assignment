@@ -126,3 +126,19 @@ We follow the principle of least privilege so that no component has more permiss
 - Configure notifications via email or Slack.
 
 This setup ensures that the service is observable, maintainable, and resilient under production load.
+
+
+
+================= DEVOPS FLOW =================
+
+Developer → GitHub → Jenkins → GCR → MIG (Blue/Green Deploy)
+
+================= OBSERVABILITY =================
+
+sync-service → Cloud Logging → Cloud Monitoring → Alerts
+
+================= SECURITY =================
+
+IAM Roles:
+- Jenkins → Compute + GCR + Secrets
+- VM → Secret Manager (read-only)
