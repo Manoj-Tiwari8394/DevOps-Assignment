@@ -129,15 +129,18 @@ This setup ensures that the service is observable, maintainable, and resilient u
 
 
 
-================= DEVOPS FLOW =================
+
+
+
+**================= DEVOPS FLOW =================**
 
 Developer → GitHub → Jenkins → GCR → MIG (Blue/Green Deploy)
 
-================= OBSERVABILITY =================
+**================= OBSERVABILITY =================**
 
 sync-service → Cloud Logging → Cloud Monitoring → Alerts
 
-================= SECURITY =================
+**================= SECURITY =================**
 
 IAM Roles:
 - Jenkins → Compute + GCR + Secrets
