@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_ID = "your-gcp-project"
+        PROJECT_ID = "DrvOps_Project"
         IMAGE_NAME = "sync-service"
         GCR_REPO = "asia-south1-docker.pkg.dev/${PROJECT_ID}/cloudeagle"
         env = sh(returnStdout: true, script: '''
